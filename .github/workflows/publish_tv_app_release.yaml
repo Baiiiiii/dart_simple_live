@@ -1,6 +1,7 @@
-name: app-build-action
+name: publish_tv_app_release
 #推送Tag时触发
 on:
+  workflow_dispatch:
   push:
     tags:
       - "tv_*"
